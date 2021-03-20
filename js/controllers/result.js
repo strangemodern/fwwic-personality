@@ -31,7 +31,7 @@ Result = (function () {
     }
 
     var redirectResult = function (id) {
-        location.href = data.results[0].slug+ '.html';
+        location.href = data.results[id].slug+ '.html';
     }
 
     var fadeAnimation = function () {
