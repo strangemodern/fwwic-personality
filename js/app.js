@@ -11,6 +11,7 @@ $(document).ready(function(){
     }, 'json');
 
     var location = window.location.pathname.split("/").pop();
+    location = location.replace(".html", "");
     if (location != "personality"){
       $('#animation').load('assets/animations/' + location + '.html', function () {
           animationInit();
