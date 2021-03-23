@@ -9,4 +9,11 @@ $(document).ready(function(){
         Questions.init();
         Result.init();
     }, 'json');
+
+    var location = window.location.pathname.split("/").pop();
+    if (location != "personality"){
+      $('#animation').load('assets/animations/' + location + '.html', function () {
+          animationInit();
+      });
+    }
 });
